@@ -7,10 +7,22 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Верстка приемлемого макета</title>
   </head>
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 4 starter </h3>
+    <header class="header">
+      <div class="header__left">
+        <button class="header__button header__button--menu"></button>
+        <div class="header__logo"><img src="./img/logo.svg" alt="logo"></div>
+      </div>
+      <div class="header__right">
+        <button class="header__button header__button--call header__button--hidden"></button>
+        <button class="header__button header__button--message header__button--hidden"></button>
+        <button class="header__button header__button--profile header__button--hidden"></button>
+        <button class="header__button header__button--application"></button>
+        <button class="header__button header__button--checkstatus"></button>
+      </div>
+    </header>
+    <h1>Услуги и сервисы</h1>
   </body>
 </html>
