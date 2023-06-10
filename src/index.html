@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__left">
         <button class="header__button header__button--menu"></button>
-        <div class="header__logo"><img src="./img/logo.svg" alt="logo"></div>
+        <div class="header__logo"><img src="./img/logo.svg" alt="Логотип"></div>
       </div>
       <div class="header__right">
         <button class="header__button header__button--call header__button--hidden"></button>
@@ -23,6 +23,113 @@
         <button class="header__button header__button--checkstatus"></button>
       </div>
     </header>
-    <h1>Услуги и сервисы</h1>
+    <main class="content">
+      <h1>Услуги и сервисы</h1>
+      <nav class="navigation">
+        <ul class="navigation__menu">
+          <li class="navigation__item navigation__item--active"><a href="#" class="navigation__name">Ремонтируемые бренды</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__name">Ремонтируемые устройства</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__name">Цены на услуги</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__name">Адреса сервисных центров</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__name">Специальные цены</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__name">Отзывы</a></li>
+        </ul>
+      </nav>
+      <section class="company-presentation">
+        <p class="company-presentation__text company-presentation__text--first">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+        </p>
+        <button class="read-more">Читать далее</button>
+        <img class="company-presentation__image" src="./img/image-main.jpg" alt="Стенд компании">
+      </section>
+      <section class="repair-brand">
+        <h2 class="subtitles">Ремонт техники различных брендов</h2>
+        <div class="swiper-container">
+          <div class="image-slider swiper">
+            <div class="image-slide__wrapper swiper-wrapper">
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                   <img src="./img/lenovo.png" alt="Lenovo">
+                  </div>
+                </a>
+              </div>
+                <div class="image-slider__slide swiper-slide">
+                  <a class="link-bar" href="#">
+                    <div class="image-slider__image button-styling">
+                      <img  src="./img/samsung.png" alt="Samsung">
+                    </div> 
+                  </a>       
+                </div> 
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                    <img  src="./img/apple.png" alt="Apple">
+                  </div>
+                </a>        
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                    <img  src="./img/viewsonic.png" alt="ViewSonic">
+                  </div> 
+                </a>       
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                    <img  src="./img/bosh.png" alt="Bosh">
+                  </div>
+                </a>        
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                    <img  src="./img/hp.png" alt="hp">
+                  </div> 
+                </a>      
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                    <img  src="./img/acer.png" alt="acer">
+                  </div>  
+                </a>     
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                    <img  src="./img/sony.png" alt="sony">
+                  </div> 
+                </a>      
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <a class="link-bar" href="#">
+                  <div class="image-slider__image button-styling">
+                   <img src="./img/lenovo.png" alt="Lenovo">
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="repair-technique">
+       <h2 class="subtitles">Ремонт различных видов техники</h2>
+       <div class="swiper">
+        
+          <div class="swiper-wrapper">
+        
+          <div class="swiper-slide image-slide__wrapper">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        
+          </div>
+        
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

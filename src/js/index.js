@@ -1,3 +1,11 @@
 import '../scss/style.scss'
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-console.log('Works!')
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  modules: [Navigation, Pagination],
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },  
+});
