@@ -13,7 +13,7 @@
     <header class="header">
       <div class="header__left">
         <button class="header__button header__button--menu"></button>
-        <div class="header__logo"><img src="./img/logo.svg" alt="Логотип"></div>
+        <a href="#" class="header__logo"><img src="./img/logo.svg" alt="Логотип"></a>
       </div>
       <div class="header__right">
         <button class="header__button header__button--call header__button--hidden"></button>
@@ -23,8 +23,44 @@
         <button class="header__button header__button--checkstatus"></button>
       </div>
     </header>
+    <section class="menu">
+      <div class="menu__header">
+        <a class="logo" href="#"> <img src="./img/logo.svg" alt="Логотип"></a>
+        <button class="menu__button menu__button--search"></button>
+      </div>
+      <nav class="menu__navigation">
+        <ul class="navigation-list">
+          <li class="navigation-list__item"><button class="navigation-list__button">Ремонт техники</button></li>
+          <li class="navigation-list__item"><button class="navigation-list__button navigation-list__button--active">Услуги и сервисы</button></li>
+          <li class="navigation-list__item"><button class="navigation-list__button">Корпоративным клиентам</button></li>
+          <li class="navigation-list__item"><button class="navigation-list__button">Продавцам техники</button></li>
+          <li class="navigation-list__item"><button class="navigation-list__button">Партнерам</button></li>
+          <li class="navigation-list__item"><button class="navigation-list__button">Производителям</button></li>
+          <li class="navigation-list__item"><button class="navigation-list__button">Наши сервисные центры</button></li>
+          <li class="navigation-list__item"><button class="navigation-list__button">Контакты</button></li>
+        </ul>
+        <div class="aside-footer">
+          <button class="menu__button menu__button--call"></button>
+          <button class="menu__button menu__button--message"></button>
+          <button class="menu__button menu__button--profile"></button>
+          <a class="aside-footer__link aside-footer__link--mail" href="mailto: mail@cps.com">mail@cps.com</a>
+          <a class="aside-footer__link aside-footer__link--tel" href="tel: 8 800 890 8900">8 800 890 8900</a>
+          <form class="aside-footer__form" action="">
+            <label><input class="lang__switch" name="lang" type="radio" checked><span>RU</span></label>
+            <label><input class="lang__switch" name="lang" type="radio"><span>EN</span></label>
+            <label><input class="lang__switch" name="lang" type="radio"><span>CH</span></label> 
+          </form>
+        </div>
+      </nav>
+    </section> 
     <main class="content">
-      <h1>Услуги и сервисы</h1>
+      <div class="header-container">
+        <h1>Услуги и сервисы</h1>
+        <div class="header-container__right">
+          <button class="header-container__button header-container__button--application"></button>
+          <button class="header-container__button header-container__button--checkstatus"></button>
+        </div>
+      </div>
       <nav class="navigation">
         <ul class="navigation__menu">
           <li class="navigation__item navigation__item--active"><a href="#" class="navigation__name">Ремонтируемые бренды</a></li>
@@ -40,7 +76,8 @@
           <p class="company-presentation__text company-presentation__text--first">
             Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
           </p>
-          <p class="company-presentation__text company-presentation__text--hidden">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+          <p class="company-presentation__text company-presentation__text--second">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
+          <p class="company-presentation__text company-presentation__text--third">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
           <button class="read-more">Читать далее</button>
         </div>
         <div class="company-presentation__image-wrapper">
@@ -150,17 +187,17 @@
               <img  src="./img/hp.png" alt="hp">
             </div> 
           </a>
-          <a class="link-bar link-bar-hidden" href="#">
+          <a class="link-bar link-hidden" href="#">
             <div class="link-bar__style link-bar__style--first">
               <img  src="./img/acer.png" alt="acer">
             </div>  
           </a>
-          <a class="link-bar link-bar-hidden" href="#">
+          <a class="link-bar link-hidden" href="#">
             <div class="link-bar__style link-bar__style--first">
               <img  src="./img/sony.png" alt="sony">
             </div> 
           </a> 
-          <a class="link-bar link-bar-hidden" href="#">
+          <a class="link-bar link-drop-down" href="#">
             <div class="link-bar__style link-bar__style--first">
               <img src="./img/lenovo.png" alt="Lenovo">
             </div>
@@ -256,32 +293,32 @@
               Ремонт ПК
             </div>
           </a>
-          <a href="#" class="link-bar link-bar-hidden">
+          <a href="#" class="link-bar link-hidden">
             <div class="link-bar__style link-bar__style--second">
               Ремонт ноутбуков
             </div>
           </a>
-          <a href="#" class="link-bar link-bar-hidden">
+          <a href="#" class="link-bar link-drop-down">
             <div class="link-bar__style link-bar__style--second">
               Ремонт планшетов
             </div>
           </a>
-          <a href="#" class="link-bar link-bar-hidden">
+          <a href="#" class="link-bar link-drop-down">
             <div class="link-bar__style link-bar__style--second">
               Ремонт ПК
             </div>
           </a>
-          <a href="#" class="link-bar link-bar-hidden">
+          <a href="#" class="link-bar link-drop-down">
             <div class="link-bar__style link-bar__style--second">
               Ремонт ноутбуков
             </div>
           </a>
-          <a href="#" class="link-bar link-bar-hidden">
+          <a href="#" class="link-bar link-drop-down">
             <div class="link-bar__style link-bar__style--second">
               Ремонт планшетов
             </div>
           </a>
-          <a href="#" class="link-bar link-bar-hidden">
+          <a href="#" class="link-bar link-drop-down">
             <div class="link-bar__style link-bar__style--second">
               Ремонт ПК
             </div>
@@ -353,17 +390,49 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
-        <div class="service-prices__items-wrapper service-prices__items-wrapper--hidden">
-          <div class="price-subtitles">
-            <span class="price-subtutle">Ремонтные услуги</span>
-            <div class="prise-subtitles__right">
-              <span class="price-subtutle">Цена</span>
-              <span class="price-subtutle">Срок</span>
-            </div>
-          </div>
-          <div class="service-prices__item">
-            
-          </div>
+        <div class="service-prices__table-wrapper">
+          <table class="service-prices__table">
+            <thead class="service-prices__head">
+              <tr>
+                <td>Ремонтные услуги</td>
+                <td>Цена</td>
+                <td>Срок</td>
+                <td></td>
+              </tr>
+            </thead>
+              <tbody class="service-prices__body">
+                <tr>
+                  <td>Диагностика</td>
+                  <td>Бесплатно</td>
+                  <td>30 мин</td>
+                  <td><a href="#" class="order">заказать</a></td>
+                </tr>
+                <tr>
+                  <td>Замена дисплея</td>
+                  <td>1000 &#8381;</td>
+                  <td>30-120 мин</td>
+                  <td><a href="#" class="order">заказать</a></td>
+                </tr>
+                <tr>
+                  <td>Замена полифонического динамика</td>
+                  <td>1000 &#8381;</td>
+                  <td>30-120 мин</td>
+                  <td><a href="#" class="order">заказать</a></td>
+                </tr>
+                <tr>
+                  <td>Тестирование с выдачей технического заключения</td>
+                  <td>1000 &#8381;</td>
+                  <td>30-120 мин</td>
+                  <td><a href="#" class="order">заказать</a></td>
+                </tr>
+                <tr>
+                  <td>Тестирование с выдачей технического заключения</td>
+                  <td>1000 &#8381;</td>
+                  <td>30-120 мин</td>
+                  <td ><a href="#" class="order">заказать</a></td>
+                </tr>
+              </tbody>
+          </table>
         </div>
         <p class="service-prices__description">
           Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.

@@ -38,15 +38,26 @@ h1 {
   font-size: 28px;
   line-height: 40px;
   letter-spacing: -0.6px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    border: 4px solid #41F6D7;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: -20px;
+  }
 }
 
-h1::before {
-  position: absolute;
-  content: '';
-  border: 4px solid #41F6D7;
-  height: 40px;
-  border-radius: 4px;
-  margin-left: -20px;
+.menu,
+.header-container__right,
+.header__button--hidden,
+.repair-brand__items-wrapper--hidden,
+.repair-technique__items-wrapper--hidden,
+.company-presentation__text--second,
+.company-presentation__text--third,
+.service-prices__table-wrapper {
+  display: none;
 }
 
 .header {
@@ -55,7 +66,9 @@ h1::before {
   justify-content: space-between;
 }
 
-.header__button {
+.header__button,
+.menu__button,
+.header-container__button {
   padding: 0; 
   border-width: 0;
   height: 40px;
@@ -66,10 +79,6 @@ h1::before {
   background-color: #FF3E79;
   border-radius: 50%;
   cursor: pointer;
-}
-
-.header__button--hidden {
-  display: none;
 }
 
 .header__logo {
@@ -95,13 +104,15 @@ h1::before {
   background-position: 50% 50%;
 }
 
-.header__button--checkstatus {
+.header__button--checkstatus,
+.header-container__button--checkstatus {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 1C0 0.447715 0.447715 0 1 0H15C15.5523 0 16 0.447716 16 1V18.5C15.1716 18.5 14.5 19.1715 14.5 19.9999H13.5C13.5 19.1715 12.8284 18.5 12 18.5C11.1716 18.5 10.5 19.1715 10.5 19.9999H9.5C9.49995 19.1715 8.8284 18.5 8 18.5C7.1716 18.5 6.50005 19.1715 6.5 19.9999H5.5C5.49995 19.1715 4.8284 18.5 4 18.5C3.1716 18.5 2.50005 19.1715 2.5 19.9999H1.5C1.49995 19.1715 0.828399 18.5 0 18.5V1ZM9.41631 11.7884C8.55357 12.3443 7.47034 12.5936 6.32961 12.3827C4.52743 12.0472 3.08953 10.5326 2.85946 8.71135C2.4952 5.82606 4.94922 3.42005 7.85379 3.88016C9.65596 4.16773 11.1034 5.64393 11.4006 7.43646C11.5828 8.5484 11.3239 9.57406 10.7871 10.4272L12.896 12.5265C13.2699 12.9003 13.2699 13.5138 12.896 13.8876C12.5126 14.2711 11.8991 14.2711 11.5252 13.8972L9.41631 11.7884ZM4.70582 8.05877C4.70582 6.75995 5.75994 5.70583 7.05876 5.70583C8.35758 5.70583 9.4117 6.75995 9.4117 8.05877C9.4117 9.3576 8.35758 10.4117 7.05876 10.4117C5.75994 10.4117 4.70582 9.3576 4.70582 8.05877Z' fill='white'/%3E%3C/svg%3E");
 }
 
-.header__button--call {
+.header__button--call,
+.menu__button--call {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.76019 12.25L4.30019 11.96C4.91019 11.89 5.51019 12.1 5.94019 12.53L7.78019 14.37C10.6102 12.93 12.9302 10.62 14.3702 7.78L12.5202 5.93C12.0902 5.5 11.8802 4.9 11.9502 4.29L12.2402 1.77C12.3602 0.76 13.2102 0 14.2302 0H15.9602C17.0902 0 18.0302 0.94 17.9602 2.07C17.4302 10.61 10.6002 17.43 2.07019 17.96C0.940193 18.03 0.00019455 17.09 0.00019455 15.96V14.23C-0.00980568 13.22 0.750193 12.37 1.76019 12.25Z' fill='white'/%3E%3C/svg%3E");
@@ -124,13 +135,15 @@ h1::before {
   }
  }
 
- .header__button--profile {
+ .header__button--profile,
+ .menu__button--profile {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 	background-image: url("data:image/svg+xml,%3Csvg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.5 9C12.9853 9 15 6.98528 15 4.5C15 2.01472 12.9853 0 10.5 0C8.01472 0 6 2.01472 6 4.5C6 6.98528 8.01472 9 10.5 9Z' fill='white'/%3E%3Cpath d='M0.0165859 16.6118C-0.113065 17.3412 0.535191 18 1.33903 18H18.6604C19.4902 18 20.1125 17.3412 19.9829 16.6118C19.2309 12.4 15.0561 10 9.99973 10C4.94333 10 0.768563 12.4 0.0165859 16.6118Z' fill='white'/%3E%3C/svg%3E");
 }
 
-.header__button--message {
+.header__button--message,
+.menu__button--message {
   background-repeat: no-repeat;
   background-position: 50% 50%;
 	background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18 0H2C0.9 0 0.01 0.9 0.01 2L0 20L4 15H18C19.1 15 20 14.1 20 13V2C20 0.9 19.1 0 18 0ZM11 11H5C4.45 11 4 10.55 4 10C4 9.45 4.45 9 5 9H11C11.55 9 12 9.45 12 10C12 10.55 11.55 11 11 11ZM15 6H5C4.45 6 4 5.55 4 5C4 4.45 4.45 4 5 4H15C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6Z' fill='white'/%3E%3C/svg%3E");
@@ -352,6 +365,7 @@ h1::before {
 }
 
 .order {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-family: 'TT-lakes-bold', sans-serif;
@@ -458,16 +472,6 @@ h1::before {
   text-align: center;
 }
 
-.company-presentation__text--hidden {
-  display: none;
-}
-
-.repair-brand__items-wrapper--hidden,
-.repair-technique__items-wrapper--hidden,
-.service-prices__items-wrapper--hidden {
-  display: none;
-}
-
 @media (min-width:767px) {
   .header__button--hidden {
     display: inline-block;
@@ -486,6 +490,7 @@ h1::before {
 
   .subtitles {
     margin-bottom: 24px;
+    padding-left: 24px;
   }
 
   .repair-brand__items-wrapper,
@@ -500,7 +505,8 @@ h1::before {
     width: 224px;
   }
 
-  .link-bar-hidden {
+  .link-hidden,
+  .link-drop-down {
     display: none;
   }
 
@@ -544,12 +550,13 @@ h1::before {
     margin-bottom: 32px;
   }
 
-  .company-presentation__text--hidden {
+  .company-presentation__text--second {
     display: block;
     margin-top: 24px;
   }
 
-  .swiper {
+  .swiper,
+  .company-presentation__text--third {
     display: none;
   }
   
@@ -585,24 +592,360 @@ h1::before {
       border-radius: 1px;
     }
   }
-
-  .price-subtutle {
-    color: #7E7E82;
-    font-family: 'TT-lakes-medium', sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    display: inline-block;
+  .service-prices__table-wrapper {
+    display: block;
+    margin: 24px;
+    border-radius: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    font-family: 'TT-lakes-medium';
+    font-style: 14px;
+    line-height: 18px;
   }
 
-  .price-subtitles {
+  .service-prices__table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .service-prices__table td {
+    padding: 23px 16px 23px 16px;
+  }
+ 
+
+  .service-prices__head {
+    color: #7E7E82;
+  }
+
+  
+
+  .service-prices__body {
+    border-radius: 20px;
+    border: none;
+    background-color: #FFFFFF;
+    
+      
+  }
+
+  .service-prices__description {
+    width: 421px;
+  }
+
+  .take-offer {
+    width: 380px;
+    margin-left: 24px;
+    margin-bottom: 50px;
+  }
+
+  .footer {
     display: flex;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 225px;
+    padding: 32px 24px 24px 24px;
   }
 
-  .prise-subtitles__right .price-subtutle:first-child {
-    margin-right: 61px;
+  .footer__description {
+    text-align: right;
+    width: 213px;
+  }
+
+  .footer__dev {
+    text-align: left;
+    width: 218px;
+  }
+
+  h1 {
+    margin-left: 24px;
+
+    &::before {
+        position: absolute;
+        content: '';
+        border: 4px solid #41F6D7;
+        height: 40px;
+        border-radius: 4px;
+        margin-left: -28px;
+      }
+    }
+  
+    .header__right:last-child {
+      margin-right: 24px;
+    }
+
+    .header__left:first-child {
+      margin-left: 8px;
+    }
+    
+    .navigation__menu {
+      padding-inline-start: 24px;
+    }
+
+    .service-prices__description {
+      margin-left: 24px;
+    }
+
+    .order {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+
+}
+  
+
+@media (min-width:1439px) {
+  .header,
+  .company-presentation__text--second {
+    display: none;
+  }
+
+  .menu {
+    width: 320px;
+    float: left;
+    display: block;
+    background-color: #FFFFFF;
+    min-height: 1925px;
+  }
+
+  .menu__button--search {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.5006 11.0006H11.7106L11.4306 10.7306C12.6306 9.33063 13.2506 7.42063 12.9106 5.39063C12.4406 2.61063 10.1206 0.390626 7.32063 0.0506256C3.09063 -0.469374 -0.469374 3.09063 0.0506256 7.32063C0.390626 10.1206 2.61063 12.4406 5.39063 12.9106C7.42063 13.2506 9.33063 12.6306 10.7306 11.4306L11.0006 11.7106V12.5006L15.2606 16.7506C15.6706 17.1606 16.3306 17.1606 16.7406 16.7506L16.7506 16.7406C17.1606 16.3306 17.1606 15.6706 16.7506 15.2606L12.5006 11.0006ZM6.50063 11.0006C4.01063 11.0006 2.00063 8.99063 2.00063 6.50063C2.00063 4.01063 4.01063 2.00063 6.50063 2.00063C8.99063 2.00063 11.0006 4.01063 11.0006 6.50063C11.0006 8.99063 8.99063 11.0006 6.50063 11.0006Z' fill='white'/%3E%3C/svg%3E");
+  }
+
+  .logo {
+    margin-right: 78px;  
+    cursor:auto;	
+  }
+
+  .menu__header {
+    display: flex;
+    align-items: center;
+    padding: 30px 30px 0 22px;
+    justify-content: space-between;
+  }
+
+  .menu__navigation {
+    width: 276px;
+    height: 720px;
+    margin-top: 37px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'TT-lakes-medium';
+    padding-inline-start: 0;
+  }
+
+  .navigation-list {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    list-style: none;  
+    padding-inline-start: 24px;
+    margin-block-start: 0;
+  }
+
+  .navigation-list__button--active {
+      color: #7E7E82;
+      position: relative;
+
+      &::after {
+      position: absolute;
+      content: '';
+      left: -30px;
+      top: -8px;
+      height: 32px;
+      border-left: 8px solid #41F6D7;
+      border-radius: 10px;
+      }
+  }
+
+  .navigation-list__button {
+    min-width: 90%;
+    text-align: left;
+    background-color: #FFFFFF;
+    border: none;
+    margin-bottom: 32px;
+    cursor: pointer;
+    font-family: 'TT-lakes-medium'; 
+  }
+
+  .navigation-list__button {
+    min-width: 90%;
+    text-align: left;
+    background-color: #FFFFFF;
+    border: none;
+    margin-bottom: 28px;
+    cursor: pointer;
+    font-family: 'TT-lakes-medium';
+  }
+
+  .aside-footer {
+    padding: 4px;
+  }
+
+  .aside-footer__form {
+    margin-left: 20px;
+  }
+
+  .aside-footer__link {
+    display: block;
+    text-decoration: none;
+    color: #1B1C21;
+    margin-left: 16px;
+  }
+
+  .aside-footer__link--mail {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    font-family: 'TT-lakes-medium';
+    margin-top: 16px;
+    margin-bottom: 12px;
+    margin-left: 16px;
+  }
+
+  .aside-footer__link--tel {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-family: 'TT-lakes-bold';
+    margin-bottom: 40px;
+    margin-left: 16px;
+  }
+
+  .lang__switch {
+    opacity: 0;
+    position: absolute;
+    margin-left: 16px;
+  }
+
+  .lang__switch+span{
+    cursor: pointer;
+  }
+
+  .lang__switch:checked+span {
+    color: #7E7E82;
+   }
+
+   .header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 30px 8px 35px;
+   }
+
+  .header-container__right {
+    display: inline-block;    
+  }
+
+  h1 {
+    margin: 0;
+    line-height: 40px;
+    
+    &::before {
+    position: absolute;
+    content: '';
+    border: 2px solid #41F6D7;
+    height: 40px;
+    border-radius: 4px;
+    left: -5px;
+    top: 0;
+    }
+  }
+
+  
+  .header-container__button--application {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.25807 13.4583L8.66685 13.0494L6.94998 11.3322L6.54121 11.7411L6.33682 11.5367C6.0098 11.1687 5.68278 10.9643 5.35575 11.0052C5.11049 11.0052 4.9061 11.1687 4.74259 11.414C4.49732 11.8229 4.61996 12.2726 4.66083 12.5588C4.66083 12.6406 4.70171 12.6815 4.70171 12.7632C4.70171 12.8859 4.70171 13.0494 4.41557 13.0903C4.00679 13.213 3.47538 13.3356 2.94397 13.6218C2.20817 14.0307 1.71764 14.3987 1.4315 14.7666C-0.0809772 16.7291 0.000778159 18.4055 0.000778159 18.4872C0.000778159 18.6099 0.0416558 18.6917 0.123411 18.7325L1.22711 19.8773C1.30886 19.9591 1.39062 20 1.47237 20C1.47237 20 1.51325 20 1.59501 20C2.00378 20 3.47538 19.9182 5.19224 18.569C5.56014 18.2828 5.92804 17.7922 6.33682 17.0562C6.62296 16.5656 6.78647 16.0341 6.86823 15.5844C6.94998 15.2982 7.07262 15.2982 7.19525 15.2982C7.23613 15.2982 7.31788 15.339 7.39964 15.339C7.56315 15.3799 7.72666 15.4208 7.93105 15.4208C8.13544 15.4208 8.33983 15.3799 8.54421 15.2573C8.78948 15.0937 8.95299 14.8893 8.99387 14.644C9.03475 14.3169 8.87123 13.9898 8.50334 13.7036L8.25807 13.4583Z' fill='white'/%3E%3Cpath d='M16.884 4.87841L18.0188 4.32603C18.0609 4.28354 18.1449 4.24105 18.1869 4.19856L19.9101 1.86157C20.0362 1.69161 20.0362 1.43667 19.8681 1.3092L18.6913 0.119458C18.5652 -0.00801422 18.313 -0.0505049 18.1449 0.076967L15.8333 1.81908C15.7913 1.86157 15.7493 1.90406 15.7072 1.98905L15.1609 3.13629L11 7.21539L12.7652 9L16.884 4.87841Z' fill='white'/%3E%3Cpath d='M17.8527 13.0448C16.8636 12.0036 15.4393 11.6288 14.0941 12.0036L7.64527 5.17331C7.72439 4.79848 7.76396 4.46529 7.76396 4.09046C7.76396 3.04926 7.36832 2.00806 6.61661 1.21675C5.58796 0.0922529 4.04498 -0.282579 2.6207 0.217197C2.54157 0.258845 2.42288 0.383789 2.38331 0.550381C2.38331 0.675325 2.42288 0.800269 2.50201 0.925213L4.44062 2.96597C4.87582 3.42409 4.87582 4.21541 4.44062 4.67353C4.00542 5.13166 3.25371 5.13166 2.81851 4.67353L0.8799 2.63278C0.76121 2.54949 0.642519 2.50784 0.484265 2.54949C0.365574 2.54949 0.246884 2.67443 0.20732 2.79937C-0.267442 4.25705 0.0886295 5.88133 1.11728 6.96417C1.82943 7.75549 2.85808 8.17197 3.88673 8.17197C4.20324 8.17197 4.55931 8.13032 4.87582 8.04702L11.3642 14.8773C11.0082 16.2933 11.4038 17.7927 12.3533 18.8339C13.105 19.6252 14.0546 20 15.0832 20C15.5184 20 15.914 19.9167 16.3492 19.7918C16.4679 19.7501 16.5866 19.6252 16.6262 19.5002C16.6658 19.3753 16.6262 19.2087 16.5075 19.1254L14.5689 17.0846C14.3711 16.8764 14.2128 16.5432 14.2128 16.21C14.2128 15.8768 14.3315 15.5853 14.5689 15.3354C14.8063 15.0855 15.0832 14.9606 15.3997 14.9606C15.7162 14.9606 15.9932 15.0855 16.2306 15.3354L18.1692 17.3762C18.2879 17.4595 18.4065 17.5011 18.5252 17.5011C18.6439 17.4595 18.7626 17.3762 18.8022 17.2512C18.9209 16.8348 19 16.3766 19 15.9185C19 14.8356 18.6044 13.7944 17.8527 13.0448Z' fill='white'/%3E%3C/svg%3E");
+    position: relative;
+    margin-right: 160px;
+
+    &::after {
+      content: "Оставить заявку";
+      position: absolute;
+      left: -130px;
+      top: 8px;
+      width: max-content;
+      font-family: 'TT-lakes-medium', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+
+  .header-container__button--checkstatus {
+    position: relative;
+
+    &::after {
+      content: "Статус ремонта";
+      position: absolute;
+      left: -125px;
+      top: 8px;
+      width: max-content;
+      font-family: 'TT-lakes-medium', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+    }
+  }
+  
+  .navigation__menu {
+    flex-wrap: wrap;
+    padding-left:34px;
+    margin-bottom: 0;
+  }
+
+  .navigation__item {
+    padding: 8px 21px 8px 21px;
+  }
+
+  .company-presentation__text--third {
+    display: block;
+    margin-top: 24px;
+  }
+  
+  .company-presentation__text-wrapper {
+    margin: 18px 36px 0 34px;
+  }
+
+  .company-presentation__image-wrapper {
+    margin-right: 28px;
+    margin-bottom: 51px;
+  }
+
+  .subtitles,
+  .repair-brand__items-wrapper,
+  .repair-technique__items-wrapper {
+    padding-left: 32px;
+  }
+
+  .link-hidden {
+    display: block;
+  }
+
+  .show-all__styling {
+    padding-left: 63px;
+
+    &::before {
+      left: 40px;
+    }
+
+    &::after {
+      left: 40px;
+    }
+  }
+
+  .link-bar__style--second,
+  .link-bar__style--first {
+    width: 240px;
+  }
+
+  .link-bar {
+    margin-right: 32px;
+  }
+
+  .service-prices__description,
+  .take-offer {
+    margin-left: 32px;
   }
 
 }
