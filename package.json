@@ -20,6 +20,7 @@
     "start": "webpack-dev-server --mode development --open",
     "watch": "webpack --mode development --watch"
   },
+  "homepage": "https://vladislavgaydukov.github.io/work1.6/",
   "browserslist": [
     "last 2 versions",
     "Firefox ESR",
