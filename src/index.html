@@ -25,7 +25,10 @@
     </header>
     <section class="menu">
       <div class="menu__header">
-        <a class="logo" href="#"> <img src="./img/logo.svg" alt="Логотип"></a>
+        <div class="menu__header-left">
+          <button class="menu__button menu__button--out menu__button--visibility"></button>
+          <a class="logo" href="#"> <img src="./img/logo.svg" alt="Логотип"></a>
+        </div>
         <button class="menu__button menu__button--search"></button>
       </div>
       <nav class="menu__navigation">
@@ -392,47 +395,37 @@
         </div>
         <div class="service-prices__table-wrapper">
           <table class="service-prices__table">
-            <thead class="service-prices__head">
+            <tr>
+              <td class="servecices-prices__service">Диагностика</td>
+              <td class="servecices-prices__price">Бесплатно</td>
+              <td class="servecices-prices__time">30 мин</td>
+              <td class="service-prices__order-wrapper" ><button class="service-prices__order">заказать</button></td>
+            </tr>
               <tr>
-                <td>Ремонтные услуги</td>
-                <td>Цена</td>
-                <td>Срок</td>
-                <td></td>
+                <td>Замена дисплея</td>
+                <td>1000 &#8381;</td>
+                <td>30-120 мин</td>
+                <td class="service-prices__order-wrapper" ><button class="service-prices__order">заказать</button></td>
+               </tr>
+              <tr>
+                <td>Замена полифонического динамика</td>
+                <td>1000 &#8381;</td>
+                <td>30-120 мин</td>
+                <td class="service-prices__order-wrapper" ><button class="service-prices__order">заказать</button></td>
               </tr>
-            </thead>
-              <tbody class="service-prices__body">
-                <tr>
-                  <td>Диагностика</td>
-                  <td>Бесплатно</td>
-                  <td>30 мин</td>
-                  <td><a href="#" class="order">заказать</a></td>
-                </tr>
-                <tr>
-                  <td>Замена дисплея</td>
-                  <td>1000 &#8381;</td>
-                  <td>30-120 мин</td>
-                  <td><a href="#" class="order">заказать</a></td>
-                </tr>
-                <tr>
-                  <td>Замена полифонического динамика</td>
-                  <td>1000 &#8381;</td>
-                  <td>30-120 мин</td>
-                  <td><a href="#" class="order">заказать</a></td>
-                </tr>
-                <tr>
-                  <td>Тестирование с выдачей технического заключения</td>
-                  <td>1000 &#8381;</td>
-                  <td>30-120 мин</td>
-                  <td><a href="#" class="order">заказать</a></td>
-                </tr>
-                <tr>
-                  <td>Тестирование с выдачей технического заключения</td>
-                  <td>1000 &#8381;</td>
-                  <td>30-120 мин</td>
-                  <td ><a href="#" class="order">заказать</a></td>
-                </tr>
-              </tbody>
-          </table>
+              <tr>
+                <td>Тестирование с выдачей технического заключения</td>
+                <td>1000 &#8381;</td>
+                <td>30-120 мин</td>
+                <td class="service-prices__order-wrapper" ><button class="service-prices__order">заказать</button></td>
+               </tr>
+              <tr>
+                <td>Тестирование с выдачей технического заключения</td>
+                <td>1000 &#8381;</td>
+                <td>30-120 мин</td>
+                <td class="service-prices__order-wrapper" ><button class="service-prices__order">заказать</button></td>
+              </tr>
+            </table>
         </div>
         <p class="service-prices__description">
           Все цены указаны с учетом НДС. Стоимость ремонта указана на единичную услугу. Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
