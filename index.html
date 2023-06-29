@@ -7,6 +7,32 @@
     <title>Верстка приемлемого макета</title>
   <link href="style.css" rel="stylesheet"></head>
   <body>
+    <div class="modal-call modal-call__visibility">
+      <div class="modal-call__content">
+        <button class="menu__button modal-call__out"></button>
+        <h2 class="modal-call__title">Заказать звонок</h2>
+        <form action="">
+        <input type="text" class="modal-call__input" value="Телефон"> 
+        <p class="modal-call__text">
+          Нажимая “отправить”, вы даете согласие на <span class="modal-call__red-text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-call__red-text">политикой конфиденциальности</span>
+        </p>
+        <a href="#" class="modal-call__submit">Отправить</a>
+        </form>
+      </div>
+    </div>
+    <div class="modal-feedback modal-feedback__visibility">
+      <div class="modal-feedback__content">
+        <button class="menu__button modal-feedback__out"></button>
+        <h2 class="modal-feedback__title">Заказать звонок</h2>
+        <form action="">
+        <input type="text" class="modal-feedback__input" value="Телефон"> 
+        <p class="modal-feedback__text">
+          Нажимая “отправить”, вы даете согласие на <span class="modal-feedback__red-text">обработку персональных данных</span> и соглашаетесь с нашей <span class="modal-feedbackl__red-text">политикой конфиденциальности</span>
+        </p>
+        <a href="#" class="modal-feedback__submit">Отправить</a>
+        </form>
+      </div>
+    </div>
     <header class="header">
       <div class="header__left">
         <button class="header__button header__button--menu"></button>
@@ -20,38 +46,40 @@
         <button class="header__button header__button--checkstatus"></button>
       </div>
     </header>
-    <section class="menu">
-      <div class="menu__header">
-        <div class="menu__header-left">
-          <button class="menu__button menu__button--out menu__button--visibility"></button>
-          <a class="logo" href="#"> <img src="./img/logo.svg" alt="Логотип"></a>
+    <section class="menu" id="menu">
+      <div class="menu__wrapper">
+        <div class="menu__header">
+          <div class="menu__header-left">
+            <button class="menu__button menu__button--out menu__button--visibility"></button>
+            <a class="logo" href="#"> <img src="./img/logo.svg" alt="Логотип"></a>
+          </div>
+          <button class="menu__button menu__button--search"></button>
         </div>
-        <button class="menu__button menu__button--search"></button>
+        <nav class="menu__navigation">
+          <ul class="navigation-list">
+            <li class="navigation-list__item"><button class="navigation-list__button">Ремонт техники</button></li>
+            <li class="navigation-list__item"><button class="navigation-list__button navigation-list__button--active">Услуги и сервисы</button></li>
+            <li class="navigation-list__item"><button class="navigation-list__button">Корпоративным клиентам</button></li>
+            <li class="navigation-list__item"><button class="navigation-list__button">Продавцам техники</button></li>
+            <li class="navigation-list__item"><button class="navigation-list__button">Партнерам</button></li>
+            <li class="navigation-list__item"><button class="navigation-list__button">Производителям</button></li>
+            <li class="navigation-list__item"><button class="navigation-list__button">Наши сервисные центры</button></li>
+            <li class="navigation-list__item"><button class="navigation-list__button">Контакты</button></li>
+          </ul>
+          <div class="aside-footer">
+            <button class="menu__button menu__button--call"></button>
+            <button class="menu__button menu__button--message"></button>
+            <button class="menu__button menu__button--profile"></button>
+            <a class="aside-footer__link aside-footer__link--mail" href="mailto: mail@cps.com">mail@cps.com</a>
+            <a class="aside-footer__link aside-footer__link--tel" href="tel: 8 800 890 8900">8 800 890 8900</a>
+            <form class="aside-footer__form" action="">
+              <label><input class="lang__switch" name="lang" type="radio" checked="checked"><span>RU</span></label>
+              <label><input class="lang__switch" name="lang" type="radio"><span>EN</span></label>
+              <label><input class="lang__switch" name="lang" type="radio"><span>CH</span></label> 
+            </form>
+          </div>
+        </nav>
       </div>
-      <nav class="menu__navigation">
-        <ul class="navigation-list">
-          <li class="navigation-list__item"><button class="navigation-list__button">Ремонт техники</button></li>
-          <li class="navigation-list__item"><button class="navigation-list__button navigation-list__button--active">Услуги и сервисы</button></li>
-          <li class="navigation-list__item"><button class="navigation-list__button">Корпоративным клиентам</button></li>
-          <li class="navigation-list__item"><button class="navigation-list__button">Продавцам техники</button></li>
-          <li class="navigation-list__item"><button class="navigation-list__button">Партнерам</button></li>
-          <li class="navigation-list__item"><button class="navigation-list__button">Производителям</button></li>
-          <li class="navigation-list__item"><button class="navigation-list__button">Наши сервисные центры</button></li>
-          <li class="navigation-list__item"><button class="navigation-list__button">Контакты</button></li>
-        </ul>
-        <div class="aside-footer">
-          <button class="menu__button menu__button--call"></button>
-          <button class="menu__button menu__button--message"></button>
-          <button class="menu__button menu__button--profile"></button>
-          <a class="aside-footer__link aside-footer__link--mail" href="mailto: mail@cps.com">mail@cps.com</a>
-          <a class="aside-footer__link aside-footer__link--tel" href="tel: 8 800 890 8900">8 800 890 8900</a>
-          <form class="aside-footer__form" action="">
-            <label><input class="lang__switch" name="lang" type="radio" checked="checked"><span>RU</span></label>
-            <label><input class="lang__switch" name="lang" type="radio"><span>EN</span></label>
-            <label><input class="lang__switch" name="lang" type="radio"><span>CH</span></label> 
-          </form>
-        </div>
-      </nav>
     </section> 
     <main class="content">
       <div class="header-container">
@@ -78,7 +106,9 @@
           </p>
           <p class="company-presentation__text company-presentation__text--second">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
           <p class="company-presentation__text company-presentation__text--third">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+          <p class="company-presentation__text company-presentation__text--hidden">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
           <button class="read-more">Читать далее</button>
+          <button class="close button-hidden">Скрыть</button>
         </div>
         <div class="company-presentation__image-wrapper">
           <img class="company-presentation__image" src="./img/image-main.jpg" alt="Стенд компании">
@@ -197,14 +227,17 @@
               <img src="./img/sony.png" alt="sony">
             </div> 
           </a> 
-          <a class="link-bar link-drop-down" href="#">
+          <a class="link-bar bar-drop-down" href="#">
             <div class="link-bar__style link-bar__style--first">
               <img src="./img/lenovo.png" alt="Lenovo">
             </div>
           </a>
         </div>
-        <a href="#" class="show-all link-bar">
+        <a href="#" class="show-all link-bar repair-brand__show-all">
           <span class="show-all__text show-all__styling">Показать все</span>
+        </a>
+        <a href="#" class="close-all link-bar repair-brand__close-all button-hidden">
+          <span class="close-all__text close-all__styling">Скрыть все</span>
         </a>
       </section>
       <section class="repair-technique">
@@ -324,8 +357,11 @@
             </div>
           </a>
         </div>
-        <a href="#" class="show-all link-bar">
+        <a href="#" class="show-all link-bar repair-technique__show-all">
           <span class="show-all__text show-all__styling">Показать все</span>
+        </a>
+        <a href="#" class="close-all link-bar repair-technique__close-all button-hidden">
+          <span class="close-all__text close-all__styling">Скрыть все</span>
         </a>
       </section>
       <section class="service-prices">
