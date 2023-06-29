@@ -788,11 +788,16 @@ h1 {
     height: 40px;
     border-radius: 4px;
     left: -2px;
-    top: 108px; }
+    top: 100px; }
   @media (min-width: 440px) {
     .modal-call__title,
     .modal-feedback__title {
-      margin: 40px 0 0 32px; } }
+      margin: 40px 0 0 32px; }
+      .modal-call__title::after,
+      .modal-feedback__title::after {
+        position: absolute;
+        top: -6px;
+        left: -35px; } }
 
 .modal-call .modal-call__out,
 .modal-feedback .modal-feedback__out {
