@@ -872,6 +872,9 @@ h1 {
   box-sizing: border-box;
   float: right;
   margin-right: 25px; }
+  .modal-call__submit:hover,
+  .modal-feedback__submit:hover {
+    opacity: 0.5; }
   .modal-call__submit::after,
   .modal-feedback__submit::after {
     position: absolute;
