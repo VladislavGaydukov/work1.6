@@ -747,6 +747,14 @@ h1 {
 .modal-feedback__visibility {
   display: none; }
 
+.link-bar.repair-brand__show-all,
+.link-bar.repair-technique__show-all {
+  display: none; }
+  @media (min-width: 768px) {
+    .link-bar.repair-brand__show-all,
+    .link-bar.repair-technique__show-all {
+      display: block; } }
+
 .modal-call,
 .modal-feedback {
   position: fixed;
